@@ -1,0 +1,154 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 151.2% 900 px 20.4%;
+  gap: 0px 0px;
+  grid-template-areas: "Header" "body-expo" "fotos-expo" "footer-expo";
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ".";
+  grid-area: Header;
+}
+
+.body-expo {
+  grid-area: body-expo;
+  height: 400px;
+}
+.body-expo iframe {
+  display: flex;
+  justify-items: end;
+  margin-left: 300px;
+}
+.body-expo iframe h1 {
+  text-align: center;
+}
+
+/*import estilo*/
+/* estilos*/
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.tarjeta {
+  display: grid;
+  grid-template-columns: 50px repeat(3, 3fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 0.8em 1.5em;
+  grid-auto-flow: row;
+  grid-template-areas: "separador-Iz tarjeta1 tarjeta2 tarjeta3" "separador-Iz tarjeta4 tarjeta5 tarjeta6";
+  width: 100%;
+}
+
+.tarjeta1 {
+  grid-area: tarjeta1;
+  display: flex;
+}
+
+/*Variable*/
+.tarjeta2 {
+  grid-area: tarjeta2;
+}
+.tarjeta2 .card {
+  box-shadow: 0 4px 8px 0 rgb(175, 230, 93);
+  transition: 0.3s;
+  border-radius: 5px;
+  color: rgb(245, 140, 4);
+  background-color: rgb(175, 230, 93);
+}
+.tarjeta2 .card .container-card {
+  padding: 2px 16px;
+}
+.tarjeta2 .card .container-card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.tarjeta3 {
+  grid-area: tarjeta3;
+}
+
+.tarjeta4 {
+  grid-area: tarjeta4;
+}
+
+.tarjeta5 {
+  grid-area: tarjeta5;
+  align-items: center;
+}
+
+.tarjeta6 {
+  grid-area: tarjeta6;
+}
+
+.separador-Iz {
+  grid-area: separador-Iz;
+}
+
+/*tarjetas */
+.fotos-expo {
+  grid-area: fotos-expo;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.footer-expo {
+  grid-area: footer-expo;
+  background-color: #fdf4c8;
+}
+.footer-expo #img-footer {
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box;*/
+}
+
+/* mi primer anidamiento */
+body {
+  font-family: "calibri";
+}
+body header {
+  background: #fdf4c8;
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+body header img {
+  width: 180px;
+  height: 100px;
+  float: left;
+  padding: 8px;
+}
+
+.menu {
+  width: 900px;
+  margin: 0 auto;
+}
+.menu nav {
+  float: right;
+}
+.menu nav ul {
+  box-sizing: border-box;
+}
+.menu nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 30px 0;
+  float: left;
+  position: relative;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: rgb(208, 167, 1);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=estilollegada.css.map */
